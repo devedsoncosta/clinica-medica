@@ -1,0 +1,131 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #043464;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/7596/7596871.png');
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+  .header img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    z-index: 2;
+  }
+
+  .header h1 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    z-index: 2;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 1200px;
+  }
+
+  .menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #043464;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: #f0f8ff;
+    width: 120px;
+  }
+
+  .menu a i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #108fd0;
+  }
+
+  .menu a:hover {
+    background-color: #d91481;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(217, 20, 129, 0.3);
+  }
+
+  .menu a:hover i {
+    color: white;
+  }
+
+  .form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    display: none;
+  }
+
+  .form-container h2 {
+    color: #043464;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .form-container input,
+  .form-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .form-container button {
+    background-color: #108fd0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .form-container button:hover {
+    background-color: #652875;
+  }
