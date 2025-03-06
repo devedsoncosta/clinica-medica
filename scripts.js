@@ -243,6 +243,8 @@ document.getElementById('busca-prontuarios').addEventListener('input', function 
 function carregarDadosIniciais() {
   atualizarTabela();
   atualizarSelects();
+  // Chama a função para carregar os dados mockados
+  carregarDadosMockados();
 }
 
 // Função para atualizar os selects de pacientes e médicos
